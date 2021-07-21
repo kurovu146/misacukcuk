@@ -24,6 +24,7 @@
     padding-right: 14px;
 }
 
+/*------------------------TOOLBAR--------------------*/
 .toolbar {
     display: flex;
     height: 40px;
@@ -67,6 +68,7 @@
     text-align: center;
 }
 
+/*----------------------TABLE-----------------------*/
 .table_employee {
     background-color: white;
     height: 480px;
@@ -86,6 +88,7 @@ tr:nth-child(odd) {
     background-color: #fafafa;
 }
 
+/*----------------------FOOTER-----------------------*/
 .page_navigation {
     align-content: center;
     display: flex;

@@ -2,7 +2,7 @@
     align-items: center;
     background-color: rgba(0, 0, 0, 0.22);
     bottom: 0;
-    display: flex;
+    display: none;
     justify-content: center ;
     left: 0;
     position: fixed;
@@ -11,7 +11,140 @@
 }   
 
 .popup {
-    background-color: aliceblue;
-    height: 90%;
-    width: 40%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 4px;
+    height: 100%;
+    overflow: hidden;
+    width: 50%;
 }
+
+/*-------------------------POPUP_HEADER---------------------*/
+.popup_header {
+    display: flex;
+    height: 72px;
+    justify-content: space-between;
+    padding: 24px;
+    text-align: center;
+}
+
+.popup_header-lable {
+    font-size: 16px;
+}
+
+.popup_header-cancel {
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: -16px;
+    margin-top: -20px;
+}
+
+/*------------------------POPUP_CONTENT-------------------*/
+.popup_content {
+    display: flex;
+    flex: 1;    
+}
+
+/*------------------------POPUP_AVATAR-------------------*/
+.popup_avatar {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.popup_avatar-img {
+    background-image: url("../../content/img/default-avatar.jpg");
+    background-size: contain;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    display: flex;
+    height: 114px;
+    width: 114px;
+}
+
+.popup_avatar-notice {
+    text-align: center;
+}
+
+/*------------------------POPUP_INFO--------------------*/
+
+.popup_info {
+    flex: 1;
+}
+
+.popup_info-common {
+    margin-top: 5px;
+}
+
+.popup_info-tittle::after {
+    background-color: var(--underline-color);
+    border-radius: 2px;
+    display: block;
+    content: "";
+    height: 4px;
+    margin-top: 4px;
+    width: 80px;
+}
+
+.popup_info-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.popup_info-item {
+    display: flex;
+    flex-basis: 50%;
+    flex-direction: column;
+    padding-right: 20px;
+    margin-top: 10px;
+}
+
+.popup_info-item.noicap {
+    flex-basis: 100%;
+}
+
+.popup_info-item.noicap .popup_info-input {
+    width: 250px;
+}
+
+.popup_info-input {
+    border-radius: 4px;
+    height: 30px;
+}
+
+/*-------------------POPUP_WORKING-----------------*/
+.popup_info-working {
+    padding-top: 20px;
+}
+
+/*-------------------POPUP_FOOTER-------------------*/
+.popup_info-footer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    padding-right: 10px;
+}
+
+.button1 {
+    background-color: #f4f8f7;
+    border-radius: 4px;
+    height: 36px;
+    margin-right: 10px;
+    padding: 0 10px;
+}
+
+.button {
+    background-color: #019160;
+    border-radius: 4px;
+    height: 36px;
+    padding: 0 10px;
+}
+
+.save {
+    background-image: url("../../content/icon/");
+}
+
+

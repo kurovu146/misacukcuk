@@ -17,6 +17,7 @@
     justify-content: space-between;
 }
 
+/*--------------------------LOGO----------------------*/
 .toggle {
     background-image: url('../../content/img/toggle.png');
     background-size: contain;
@@ -35,6 +36,7 @@
     width: 120px;
 }
 
+/*--------------------RESTAURANT---------------------*/
 .restaurant {   
     color: #000;
     cursor: pointer;
@@ -74,6 +76,7 @@
     color: #fff;
 }
 
+/*---------------------ACCOUNT--------------------*/
 .account {
     display: flex;
     height: 24px;

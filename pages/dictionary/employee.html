@@ -71,7 +71,7 @@
                     <h3>Danh sách nhân viên</h3>
                 </div>
                 <div class="add_employee">  
-                    <button class="button_add">
+                    <button class="button_add" id="myBtn">
                         <i class="fas fa-user-plus"></i>
                         Thêm nhân viên
                     </button>
@@ -311,13 +311,106 @@
             </div>
         </div>
     </div>
-    <div class="popup-overlay">
+    <div class="popup-overlay" id="myModal">
         <div class="popup">
-            
+            <div class="popup_header">
+                <span class="popup_header-lable"><b>THÔNG TIN NHÂN VIÊN</b></span>
+                <span class="popup_header-cancel">X</span>
+            </div>
+            <div class="popup_content">
+                <div class="popup_avatar">
+                    <div class="popup_avatar-img"></div>
+                    <div class="popup_avatar-notice">
+                        (Vui lòng chọn ảnh có các định dạng)
+                        <br>
+                        .jpg, .jpeg, .png, .gif
+                    </div>
+                </div>
+                <div class="popup_info">
+                    <div class="popup_info-common">
+                        <span class="popup_info-tittle">A. THÔNG TIN CHUNG.</span>
+                        <div class="popup_info-list">
+                            <div class="popup_info-item">
+                                <span class="popup_info-lable">Mã nhân viên(<span class="text-red">*</span>)</span>
+                                <input type="text" class="popup_info-input">
+                            </div>
+                            <div class="popup_info-item">
+                                <span class="popup_info-lable">Họ và tên(<span class="text-red">*</span>)</span>
+                                <input type="text" class="popup_info-input">
+                            </div>
+                            <div class="popup_info-item">
+                                <span class="popup_info-lable">Ngày sinh</span>
+                                <input type="date" class="popup_info-input">
+                            </div>
+                            <div class="popup_info-item">
+                                <span class="popup_info-lable">Giới tính</span>
+                                <input type="text" class="popup_info-input">
+                            </div>
+                            <div class="popup_info-item">
+                                <span class="popup_info-lable">Số CMND/ Căn cước(<span class="text-red">*</span>)</span>
+                                <input type="text" class="popup_info-input">
+                            </div>
+                            <div class="popup_info-item">
+                                <span class="popup_info-lable">Ngày cấp</span>
+                                <input type="date" class="popup_info-input">
+                            </div>
+                            <div class="popup_info-item noicap">
+                                <span class="popup_info-lable">Nơi cấp</span>
+                                <input type="text" class="popup_info-input">
+                            </div>
+                            <div class="popup_info-item">
+                                <span class="popup_info-lable">Email(<span class="text-red">*</span>)</span>
+                                <input type="text" class="popup_info-input" placeholder="example@domain">
+                            </div>
+                            <div class="popup_info-item">
+                                <span class="popup_info-lable">Số điện thoạ(<span class="text-red">*</span>)</span>
+                                <input type="text" class="popup_info-input">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popup_info-working">
+                        <span class="popup_info-tittle">B. THÔNG TIN CÔNG VIỆC.</span>
+                        <div class="popup_info-list">
+                            <div class="popup_info-item">
+                                <span class="popup_info-lable">Vị trí</span>
+                                <input type="text" class="popup_info-input">
+                            </div>
+                            <div class="popup_info-item">
+                                <span class="popup_info-lable">Phòng ban</span>
+                                <input type="text" class="popup_info-input">
+                            </div>
+                            <div class="popup_info-item">
+                                <span class="popup_info-lable">Mã số thuế cá nhân</span>
+                                <input type="text" class="popup_info-input">
+                            </div>
+                            <div class="popup_info-item">
+                                <span class="popup_info-lable">Mức lương cơ bản</span>
+                                <input type="text" class="popup_info-input">
+                            </div>
+                            <div class="popup_info-item">
+                                <span class="popup_info-lable">Ngày gia nhập công ty</span>
+                                <input type="text" class="popup_info-input">
+                            </div>
+                            <div class="popup_info-item">
+                                <span class="popup_info-lable">Tình trạng công việc</span>
+                                <input type="text" class="popup_info-input">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popup_info-footer">
+                        <button class="button1">Huỷ</button>
+                        <button class="button">
+                            <i class="far fa-save"></i>
+                            Lưu
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <script src="../../js/page/dictionary/employee.js"></script>
 </body>
 
 </html>

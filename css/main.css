@@ -26,3 +26,7 @@ body {
     font-family: MISAGoogleSan-Italic;
     src: url('../content/font/GoogleSans-Italic.otf');
 }
+
+.text-red {
+    color: red;
+}
