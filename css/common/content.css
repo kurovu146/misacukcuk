@@ -1,0 +1,155 @@
+@import url(../base/button.css);
+
+#content {
+    background-color: #fafafa;
+    border-top: 1px solid var(--border-color);
+    flex: 1;
+    padding: 0 10px 0 10px;
+}
+
+.head_content {
+    display: flex;
+    height: 40px;
+    justify-content: space-between;
+    line-height: 40px;
+    margin-top: 10px;
+}
+
+.button_add {
+    background-color: #53c49c;
+    border-radius: 4px;
+    height: 40px;
+    line-height: 35px;
+    padding-left: 14px;
+    padding-right: 14px;
+}
+
+.toolbar {
+    display: flex;
+    height: 40px;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.toolbar-left {
+    display: flex;
+}
+
+.button-sync {
+    align-items: center;
+    height: 40px;
+    width: 40px;
+}
+
+.search-icon {
+    background-image: url('../../content/icon/search.png');
+    background-position: 16px;
+    background-repeat: no-repeat;
+    border-radius: 4px;
+    font-size: 12px;
+    font-style: italic;
+    height: 40px;
+    text-align: center;
+    width: 300px;
+}
+
+.selection {
+    background-color: #fff;
+    border: 2px solid #888;
+    border-radius: 4px;
+    color: #000;
+    cursor: pointer;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 10px;
+    position: relative;
+    padding: 0 16px;
+    text-align: center;
+}
+
+.table_employee {
+    background-color: white;
+    height: 480px;
+    margin-top: 20px;
+    overflow: scroll;
+}
+
+.table th {
+    background-color: #fff;
+}
+
+.table td:hover {
+    cursor: pointer;
+}
+
+tr:nth-child(odd) {
+    background-color: #fafafa;
+}
+
+.page_navigation {
+    align-content: center;
+    display: flex;
+    height: 56px;
+    justify-content: space-around;
+
+}
+
+.page_navigation-left {
+    padding-top: 15px;
+}
+
+.page_navigation-center {
+    align-content: center;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 15px;
+    text-decoration: none;
+    width: 33%;
+}
+
+.page_navigation-right {
+    border: 2px solid #888;
+    border-radius: 4px;
+    color: #000;
+    cursor: pointer;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: 0 16px;
+    text-align: center;
+}
+
+.fisrtpage {
+    background-image: url("../../content/icon/btn-firstpage.svg");
+    background-repeat: no-repeat;
+}
+
+.prevpage {
+    background-image: url("../../content/icon/btn-prev-page.svg");
+}
+
+.circle {
+    background-repeat: no-repeat;
+    border: 1px solid #000;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.circle.circle--focus {
+    background-color: #019160;
+    color: #fff;
+}
+
+.nextpage {
+    background-image: url("../../content/icon/btn-next-page.svg");
+}
+
+.lastpage {
+    background-image: url("../../content/icon/btn-lastpage.svg");
+}
+
+.hover:hover {
+    background-color: #319b80;
+    cursor: pointer;
+}

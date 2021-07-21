@@ -1,0 +1,60 @@
+@import url(../base/icon.css);
+
+#menu {
+    border-right: 1px solid var(--border-color);
+    height: calc(100vh - var(--top-header-height));
+    width: var(--menu-width);
+}
+
+.menu_list {
+    width: var(--menu-width);
+}
+
+.menu_item {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    height: 44px;
+    line-height: 44px;
+    padding-left: 18px;
+}
+
+.menu_item.menu_item--focus {
+    background-color: #019160;
+    color: #fff;
+}
+
+.menu_item:hover {
+    background-color: #e5e5e5;
+    color: #000;
+}
+
+.menu_item:nth-child(1) .menu_item-icon {
+    background-image: url('../../content/icon/dashboard.png');
+    background-size: contain;
+    margin-right: 10px;
+}
+
+.menu_item:nth-child(2) .menu_item-icon {
+    background-image: url('../../content/icon/report.png');
+    background-size: contain;
+    margin-right: 10px;
+}
+
+.menu_item:nth-child(3) .menu_item-icon {
+    background-image: url('../../content/icon/document-online.png');
+    background-size: contain;
+    margin-right: 10px;
+}
+
+.menu_item:nth-child(4) .menu_item-icon {
+    background-image: url('../../content/icon/dic-employee.png');
+    background-size: contain;
+    margin-right: 10px;
+}
+
+.menu_item:nth-child(5) .menu_item-icon {
+    background-image: url('../../content/icon/setting.png');
+    background-size: contain;
+    margin-right: 10px;
+}
