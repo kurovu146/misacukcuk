@@ -1,0 +1,19 @@
+@keyframes popup {
+    from {
+        display: none;
+    }
+    to {
+        display: flex;
+    }
+}
+
+.popup {
+    animation: popup 5s;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 4px;
+    height: 100%;
+    overflow: hidden;
+    width: 50%;
+}

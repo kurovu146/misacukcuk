@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Phần mềm quản lý nhà hàng MISA CUKCUK</title>
-    <link rel="stylesheet" href="../../css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="../../css/main.css">
 </head>
 
 <body>
@@ -25,12 +25,12 @@
         <div class="header-right">
             <div class="restaurant">
                 Nhà hàng Biển Đông
-                <i class="fas fa-angle-down restaurant_icon"></i>
-                <ul class="restaurant_dropdown">
-                    <li class="restaurant_dropdown-item">Nhà hàng 1</li>
-                    <li class="restaurant_dropdown-item">Nhà hàng 2</li>
-                    <li class="restaurant_dropdown-item">Nhà hàng 3</li>
-                    <li class="restaurant_dropdown-item">Nhà hàng 4</li>
+                <i class="fas fa-angle-down down_icon"></i>
+                <ul class="dropdown">
+                    <li class="dropdown-item">Nhà hàng 1</li>
+                    <li class="dropdown-item">Nhà hàng 2</li>
+                    <li class="dropdown-item">Nhà hàng 3</li>
+                    <li class="dropdown-item">Nhà hàng 4</li>
                 </ul>
             </div>
             <div class="account">
@@ -43,7 +43,7 @@
     <div style="display:flex">
         <div id="menu">
             <ul class="menu_list">
-                <li class="menu_item menu_item--focus">
+                <li class="menu_item">
                     <div class="menu_item-icon icon"></div>
                     Tổng quan
                 </li>
@@ -55,7 +55,7 @@
                     <div class="menu_item-icon icon"></div>
                     Mua hàng
                 </li>
-                <li class="menu_item">
+                <li class="menu_item menu_item--focus">
                     <div class="menu_item-icon icon"></div>
                     Danh mục nhân viên
                 </li>
@@ -82,13 +82,29 @@
                     <form action="">
                        <input type="text" placeholder="Tìm kiếm theo Mã, Tên hoắc Số điện thoại" id="fname" name="fname" class="search-icon"><br>
                     </form>
-                    <div class="selection">
+                    <!-- <div class="selection">
                         Tất cả phòng ban
                         <i class="fas fa-angle-down restaurant_icon"></i>
+                    </div> -->
+                    <div class="selection">
+                        Tất cả phòng ban
+                        <i class="fas fa-angle-down down_icon"></i>
+                        <ul class="dropdown">
+                            <li class="dropdown-item">Phòng Nhân sự</li>
+                            <li class="dropdown-item">Phòng Đào tạo</li>
+                            <li class="dropdown-item">Phòng Công nghệ</li>
+                            <li class="dropdown-item">Phòng Marketing</li>
+                        </ul>
                     </div>
                     <div class="selection">
                         Tất cả vị trí
-                        <i class="fas fa-angle-down restaurant_icon"></i>
+                        <i class="fas fa-angle-down down_icon"></i>
+                        <ul class="dropdown">
+                            <li class="dropdown-item">Nhân viên</li>
+                            <li class="dropdown-item">Giám đốc</li>
+                            <li class="dropdown-item">Thu ngân</li>
+                            <li class="dropdown-item">Nhân viên Marketing</li>
+                        </ul>
                     </div>
                 </div>
                 <div class="toolbar-right">
@@ -291,7 +307,7 @@
             </div>
             <div class="page_navigation">
                 <div class="page_navigation-left">
-                    <p>Hiển thị <b>01-11/20</b> lao động</p>
+                    <p>Hiển thị <b>01-10/20</b> lao động</p>
                 </div>
                 <div class="page_navigation-center">
                     <div class="fisrtpage hover button_size"></div>
@@ -304,7 +320,7 @@
                     <div class="lastpage hover button_size"></div>
                 </div>
                 <div class="page_navigation-right">
-                    11 lao động/trang
+                    10 lao động/trang
                     <i class="fas fa-sort"></i>
                 </div>
                 

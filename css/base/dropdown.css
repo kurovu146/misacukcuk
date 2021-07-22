@@ -1,0 +1,26 @@
+.down_icon {
+    font-size: 12px;
+    padding-left: 12px;
+}
+
+.dropdown {
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+    display: none;
+    list-style: none;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    width: 174px;
+}
+
+.dropdown-item {
+    padding: 4px 16px;
+}
+
+.dropdown-item:hover {
+    background-color: #019160;
+    color: #fff;
+}

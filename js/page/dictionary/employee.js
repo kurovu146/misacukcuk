@@ -1,5 +1,7 @@
 /**
- * Modal form
+ * ---------------------------------------Modal form-------------------------------------------
+ * Date: 21/07/2021
+ * Created by: VDTuan
  */
 
 var modal = document.getElementById("myModal");
@@ -25,4 +27,17 @@ cancel.onclick = function() {
 save.onclick = function() {
     modal.style.display = "none";
 }
-  
+
+/**
+ * --------------------------------------------------Dropdown---------------------------------------------------
+ * Date: 21/07/2021
+ * Created by: VDTuan
+ */
+
+var dropdownData = [
+    "Nhà hàng Biển Đông",
+    "Nhà hàng 1"
+]
+
+
+

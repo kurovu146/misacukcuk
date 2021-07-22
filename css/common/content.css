@@ -16,9 +16,10 @@
 }
 
 .button_add {
-    background-color: #53c49c;
+    background-color: #019160;
     border-radius: 4px;
     height: 40px;
+    color: white;
     line-height: 35px;
     padding-left: 14px;
     padding-right: 14px;
@@ -61,17 +62,21 @@
     color: #000;
     cursor: pointer;
     height: 40px;
-    line-height: 40px;
+    line-height: 35px;
     margin-left: 10px;
     position: relative;
     padding: 0 16px;
     text-align: center;
 }
 
+.selection:hover .dropdown {
+    display: block;
+}
+
 /*----------------------TABLE-----------------------*/
 .table_employee {
     background-color: white;
-    height: 480px;
+    height: 430px;
     margin-top: 20px;
     overflow: scroll;
 }
@@ -90,22 +95,21 @@ tr:nth-child(odd) {
 
 /*----------------------FOOTER-----------------------*/
 .page_navigation {
-    align-content: center;
     display: flex;
-    height: 56px;
     justify-content: space-around;
-
+    margin-top: 5px;
 }
 
 .page_navigation-left {
-    padding-top: 15px;
+    margin-top: 8px;
+    margin-left: -20px;
 }
 
 .page_navigation-center {
     align-content: center;
     display: flex;
     justify-content: space-around;
-    padding-top: 15px;
+    padding-top: 5px;
     text-decoration: none;
     width: 33%;
 }
@@ -118,7 +122,6 @@ tr:nth-child(odd) {
     height: 40px;
     line-height: 40px;
     margin-left: 10px;
-    margin-top: 10px;
     padding: 0 16px;
     text-align: center;
 }
@@ -134,8 +137,9 @@ tr:nth-child(odd) {
 
 .circle {
     background-repeat: no-repeat;
-    border: 1px solid #000;
+    background-color: #ccc;
     border-radius: 12px;
+    font-size: 12px;
     text-align: center;
 }
 

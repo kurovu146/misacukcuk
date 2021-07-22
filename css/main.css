@@ -1,10 +1,12 @@
+@import url("./animation/animation.css");
 @import url("./base/button.css");
+@import url(./base/dropdown.css);
 @import url("./common/content.css");
 @import url("./common/header.css");
 @import url("./common/menu.css");
-@import url("./variable/variable.css");
-@import url("./variable/resetcss.css");
 @import url("./common/popup.css");
+@import url("./variable/resetcss.css");
+@import url("./variable/variable.css");
 
 body {
     background-color: var(--primary-color);
