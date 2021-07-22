@@ -1,3 +1,5 @@
+@import url(../base/dropdown.css);
+
 .popup-overlay {
     align-items: center;
     background-color: rgba(0, 0, 0, 0.22);
@@ -16,7 +18,7 @@
     background-color: white;
     border-radius: 4px;
     height: 100%;
-    overflow: hidden;
+    overflow: scroll;
     width: 50%;
 }
 
@@ -112,7 +114,8 @@
 
 .popup_info-input {
     border-radius: 4px;
-    height: 30px;
+    border: 2px solid #888;
+    height: 40px;
 }
 
 /*-------------------POPUP_WORKING-----------------*/
@@ -147,4 +150,40 @@
     background-image: url("../../content/icon/");
 }
 
+.gender {
+    align-items: center;
+    border-radius: 4px;
+    height: 40px;
+    line-height: 25px;
+    border: 2px solid #888;
+    color: #000;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 0 16px;
+    text-align: center;
+}
 
+.gender:hover .dropdown {
+    display: block;
+}
+
+.dropdown_icon {
+    padding-top: 8px;
+    padding-left: 1px;;
+    border-left: 2px solid #999;
+    height: 40px;
+}
+
+.info_position {
+    z-index: 3;
+}
+
+.info_room {
+    z-index: 2;
+}
+
+.info_status {
+    z-index: 1;
+}
