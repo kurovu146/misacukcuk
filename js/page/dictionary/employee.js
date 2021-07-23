@@ -11,7 +11,7 @@ var cancel = document.querySelector(".popup_header-cancel");
 var save = document.querySelector(".button");
 
 // When the user clicks the button, open the modal 
-btn.onclick = function() {
+btn.onclick = function() {  
   modal.style.display = "flex";
 }
 

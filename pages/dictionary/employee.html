@@ -22,17 +22,20 @@
 
             </div>
         </div>
-        <div class="header-right">
-            <div class="restaurant">
-                Nhà hàng Biển Đông
-                <i class="fas fa-angle-down down_icon"></i>
-                <ul class="dropdown">
-                    <li class="dropdown-item">Nhà hàng 1</li>
-                    <li class="dropdown-item">Nhà hàng 2</li>
-                    <li class="dropdown-item">Nhà hàng 3</li>
-                    <li class="dropdown-item">Nhà hàng 4</li>
+        <div class="header-right">  
+            <label class="restaurant" for="dropdown-input">
+                <div class="dropdown-header-restaurant">
+                    <span class="dropdown-value">Nhà hàng Biển Đông</span>
+                    <i class="fas fa-angle-down down_icon show"></i>
+                    <i class="fas fa-angle-up up_icon"></i>
+                </div>
+                <ul class="restaurant-list">
+                    <li class="dropdown-item">Nhà hàng Biển Đông</li>
+                    <li class="dropdown-item">Nhà hàng Biển Tây</li>
+                    <li class="dropdown-item">Nhà hàng Biển Nam</li>
+                    <li class="dropdown-item">Nhà hàng Biển Bắc</li>
                 </ul>
-            </div>
+            </label>
             <div class="account">
                 <div class="avatar"></div>
                 <div class="name">Vũ Đức Tuấn</div>
@@ -82,30 +85,32 @@
                     <form action="">
                        <input type="text" placeholder="Tìm kiếm theo Mã, Tên hoắc Số điện thoại" id="fname" name="fname" class="search-icon"><br>
                     </form>
-                    <!-- <div class="selection">
-                        Tất cả phòng ban
-                        <i class="fas fa-angle-down restaurant_icon"></i>
-                    </div> -->
-                    <div class="selection">
-                        Tất cả phòng ban
-                        <i class="fas fa-angle-down down_icon"></i>
-                        <ul class="dropdown">
+                    <label class="department">
+                        <div class="dropdown-header-department">
+                            <span class="dropdown-value1">Tất cả phòng ban</span>
+                            <i class="fas fa-angle-down down_icon show"></i>
+                            <i class="fas fa-angle-up up_icon"></i>
+                        </div>
+                        <ul class="department-list">
                             <li class="dropdown-item">Phòng Nhân sự</li>
                             <li class="dropdown-item">Phòng Đào tạo</li>
                             <li class="dropdown-item">Phòng Công nghệ</li>
                             <li class="dropdown-item">Phòng Marketing</li>
                         </ul>
-                    </div>
-                    <div class="selection">
-                        Tất cả vị trí
-                        <i class="fas fa-angle-down down_icon"></i>
-                        <ul class="dropdown">
+                    </label>
+                    <label class="position">
+                        <div class="dropdown-header-position">
+                            <span class="dropdown-value2">Tất cả vị trí</span>
+                            <i class="fas fa-angle-down down_icon show"></i>
+                            <i class="fas fa-angle-up up_icon"></i>
+                        </div>
+                        <ul class="position-list">
                             <li class="dropdown-item">Nhân viên</li>
                             <li class="dropdown-item">Giám đốc</li>
                             <li class="dropdown-item">Thu ngân</li>
                             <li class="dropdown-item">Nhân viên Marketing</li>
                         </ul>
-                    </div>
+                    </label>
                 </div>
                 <div class="toolbar-right">
                     <button class="button-sync">
@@ -398,33 +403,33 @@
                         <div class="popup_info-list">
                             <div class="popup_info-item info_position">
                                 <span class="popup_info-lable">Vị trí</span>
-                                <div class="gender">
-                                    Giám đốc
-                                    <div class="dropdown_icon">
-                                        <i class="fas fa-angle-down down_icon"></i>
-                                    </div>
-                                    <ul class="dropdown">
+                                <label class="working-position">
+                                    <span class="dropdown-value1">Tất cả vị trí
+                                        <i class="fas fa-angle-down down_icon show"></i>
+                                        <i class="fas fa-angle-up up_icon"></i>
+                                    </span>
+                                    <ul class="position-list">
                                         <li class="dropdown-item">Nhân viên</li>
                                         <li class="dropdown-item">Giám đốc</li>
                                         <li class="dropdown-item">Thu ngân</li>
                                         <li class="dropdown-item">Nhân viên Marketing</li>
                                     </ul>
-                                </div>
+                                </label>
                             </div>
                             <div class="popup_info-item info_room">
                                 <span class="popup_info-lable">Phòng ban</span>
-                                <div class="gender">
-                                    Phòng Công nghệ
-                                    <div class="dropdown_icon">
-                                        <i class="fas fa-angle-down down_icon"></i>
-                                    </div>
-                                    <ul class="dropdown">
-                                    <li class="dropdown-item">Phòng Nhân sự</li>
-                                    <li class="dropdown-item">Phòng Đào tạo</li>
-                                    <li class="dropdown-item">Phòng Công nghệ</li>
-                                    <li class="dropdown-item">Phòng Marketing</li>
+                                <label class="gender">
+                                    <span class="dropdown-value1">Tất cả phòng ban
+                                        <i class="fas fa-angle-down down_icon show"></i>
+                                        <i class="fas fa-angle-up up_icon"></i>
+                                    </span>
+                                    <ul class="department-list">
+                                        <li class="dropdown-item">Phòng Nhân sự</li>
+                                        <li class="dropdown-item">Phòng Đào tạo</li>
+                                        <li class="dropdown-item">Phòng Công nghệ</li>
+                                        <li class="dropdown-item">Phòng Marketing</li>
                                     </ul>
-                                </div>
+                                </label>
                             </div>
                             <div class="popup_info-item">
                                 <span class="popup_info-lable">Mã số thuế cá nhân</span>
@@ -445,7 +450,7 @@
                                     <div class="dropdown_icon">
                                         <i class="fas fa-angle-down down_icon"></i>
                                     </div>
-                                    <ul class="dropdown">
+                                    <ul class="restaurant-list">
                                         <li class="dropdown-item">Đang đang việc</li>
                                         <li class="dropdown-item">Đã nghỉ hưu</li>
                                     </ul>
@@ -466,7 +471,9 @@
     </div>
     <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
     <script src="../../js/page/dictionary/employee.js"></script>
+    <script src="../../js/page/dictionary/dropdown.js"></script>
 </body>
 
 </html>

@@ -28,7 +28,7 @@
 /*------------------------TOOLBAR--------------------*/
 .toolbar {
     display: flex;
-    height: 40px;
+    height: 50px;
     justify-content: space-between;
     padding-top: 10px;
 }
@@ -55,22 +55,34 @@
     width: 300px;
 }
 
-.selection {
+.department {
     background-color: #fff;
     border: 2px solid #888;
     border-radius: 4px;
     color: #000;
     cursor: pointer;
     height: 40px;
-    line-height: 35px;
+    line-height: 10px;
     margin-left: 10px;
     position: relative;
     padding: 0 16px;
     text-align: center;
+    width: 180px;
 }
 
-.selection:hover .dropdown {
-    display: block;
+.position {
+    background-color: #fff;
+    border: 2px solid #888;
+    border-radius: 4px;
+    color: #000;
+    cursor: pointer;
+    height: 40px;
+    line-height: 10px;
+    margin-left: 10px;
+    position: relative;
+    padding: 0 16px;
+    text-align: center;
+    width: 180px;
 }
 
 /*----------------------TABLE-----------------------*/
